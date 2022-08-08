@@ -24,3 +24,14 @@ section{
     width: fit-content;
     border-radius: 8px;
 }
+
+.getTouch {
+    margin: 0 auto;
+    border: 2px solid #FFFFFF;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 8px 14px;
+}
+.getTouch:hover {
+    background-color: #FAFAFA;
+}
