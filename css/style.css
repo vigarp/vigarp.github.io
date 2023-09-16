@@ -82,7 +82,11 @@ img {
 }
 
 #navbar ul a:hover {
-  background-color: rgb(253, 6, 47);
+  background-color: var(--secondary-color);
+}
+
+.topnav {
+  display: none;
 }
 
 #about .container {
@@ -299,11 +303,62 @@ img {
 /* SMARTPHONE */
 @media (max-width: 800px) {
   #navbar {
+    display: none;
     padding: 0rem 1rem;
     justify-content: flex-start;
     overflow-x: scroll;
   }
 
+  .topnav {
+    display: block;
+    overflow: hidden;
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .topnav ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  .topnav a.icon {
+    color: var(--secondary-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: .5rem;
+  }
+
+  .topnav a.icon:hover {
+    background-color: transparent;
+  }
+
+  
+  .topnav a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+  }
+  
+  .active {
+    background-color: var(--primary-color);
+    height: 4.5rem;
+  }
   #skills .container {
     display: block;
   }
